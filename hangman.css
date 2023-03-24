@@ -1,0 +1,182 @@
+body {
+  background-color: #EDDCD2;
+  color: #A5A58D;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #CB997E;
+}
+
+h2 {
+  font-size: 2em;
+  color: #CB997E;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#alphabet {
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#alphabet li {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+  list-style: none;
+  background-color: #A5A58D;
+  color: #EDDCD2;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+#alphabet li:hover:not(.active) {
+  background-color: #CB997E;
+}
+
+#my-word {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#my-word li {
+  margin: 5px;
+  list-style: none;
+  font-size: 2em;
+  border-bottom: 2px solid #A5A58D;
+}
+
+.active {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#reset {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #A5A58D;
+  background-color: #EDDCD2;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#reset:hover {
+  background-color: #CB997E;
+}
+
+#hint{
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #A5A58D;
+  background-color: #EDDCD2;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#hint:hover {
+  background-color: #CB997E;
+}
+
+#hangman {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px auto;
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: #EDDCD2;
+  border: 2px solid #A5A58D;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+#canvas-container {
+  width: 100%;
+  text-align:center;
+}
+
+canvas {
+  display: inline;
+}
+
+#container {
+  width: 100%;
+  text-align:center;
+}
+
+#stickman line {
+  stroke: #CB997E;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#stickman .head {
+  stroke: #CB997E;
+  stroke-width: 4;
+}
+
+#stickman .body {
+  stroke: #CB997E;
+  stroke-width: 5;
+}
+
+#stickman .arm {
+  stroke: #CB997E;
+  stroke-width: 4;
+  transform-origin: top;
+}
+
+#stickman #left-arm {
+  stroke: #CB997E;
+  transform: rotate(45deg);
+}
+
+#stickman #right-arm {
+  stroke: #CB997E;
+  transform: rotate(-45deg);
+}
+
+#stickman .leg {
+  stroke: #CB997E;
+  stroke-width: 4;
+  transform-origin: top;
+}
+
+#stickman #left-leg {
+  stroke: #CB997E;
+  transform: rotate(45deg);
+}
+
+#stickman #right-leg {
+  stroke: #CB997E;
+  transform: rotate(-45deg);
+}
+ 
